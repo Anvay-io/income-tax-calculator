@@ -1,5 +1,5 @@
-body {
-    margin: 0;
+body{
+    background: linear-gradient(to right,#667eea,#764ba2);
 }
 
 #main {
@@ -12,14 +12,23 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
+    width:min(90%,400px);
+    max-width: 420px;
     padding: 30px;
-    border: 2px solid rgb(170, 133, 206);
-    border-radius: 10px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+.container:hover{
+    transform:translateY(-5px);
 }
 
 h1 {
+    font-size:clamp(24px,5vw,36px);
     margin-top: 0;
+    margin-bottom: 0;
     text-decoration: underline;
     text-decoration-color: rgb(170, 133, 206);
 }
@@ -38,6 +47,48 @@ button:hover {
     color: white;
 }
 
-input {
-    padding: 10px;
+input{
+    padding:12px;
+    font-size:17px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+input:focus{
+    border-color:#8E60C0;
+    box-shadow:0 0 10px rgba(142,96,192,.3);
+}
+
+#result{
+    margin-top:15px;
+    font-size:22px;
+    color:green;
+    font-weight:bold;
+    transition:.4s;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+}
+
+@media (max-width:480px){
+
+.container{
+    width:90%;
+    padding:20px;
+}
+
+h1{
+    font-size:24px;
+}
+
+button{
+    font-size:16px;
+}
+
+input{
+    font-size:16px;
+}
 }

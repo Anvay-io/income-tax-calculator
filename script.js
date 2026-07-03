@@ -19,7 +19,7 @@ else {
     TotalTax = (amount-2400000)*0.30 + 240000;
 }
 const result = document.getElementById('result');
-result.textContent = `Income Tax: ${"\u20B9"}${TotalTax}`;
+result.textContent = `Income Tax: ₹${TotalTax.toLocaleString("en-IN")}`;
 
 income.value = "";
 income.focus();
