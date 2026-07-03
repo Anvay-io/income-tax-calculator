@@ -1,0 +1,28 @@
+# System Files (OS-specific junk)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/Editor Settings (Keep your workspace private)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Local Development/Backup Files
+*.log
+*.bak
+*.tmp
+temp/
+
+# Deployment Artifacts
+dist/
+build/
+out/
+
+# Secret Keys/Config (Never commit these!)
+.env
+config.json
+
+# Dependencies (If you ever expand the project with libraries)
+node_modules/
