@@ -1,10 +1,6 @@
 # 🚨💸 Income Tax Raid Escape Calculator
-
-## 🚀 Live Deployment
-
-**🌐 https://your-live-demo-link.vercel.app/**
+## 🚀 Live Deployment- **🌐 https://your-live-demo-link.vercel.app/**
 ---
-
 # 📖 The Story
 
 You've just received a notification...
